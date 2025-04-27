@@ -14,6 +14,16 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            - name: Download resume page
+              env:
+                  RESUME_VERSION: v0.1.3
+                  REPO: ${{ github.repository_owner }}/resume
+                  GH_TOKEN: ${{ secrets.GH_PAT_RESUME_READ }}
+              run: gh release download ${{ env.RESUME_VERSION }}
+                  --repo='${{ env.REPO }}'
+                  --pattern='resume_${{ env.RESUME_VERSION }}.html'
+                  --output='./www/resume.html'
+
             - uses: actions/configure-pages@v5
 
             - uses: actions/jekyll-build-pages@v1
