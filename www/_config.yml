@@ -1,0 +1,19 @@
+# Personalisation settings
+
+title: Matt Fitzpatrick
+description: >-
+  The personal projects website for Matt Fitzpatrick, an Australian
+  (Brisbane-based) software engineer.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mfitzpatrick.github.io"
+github_username: mfitzpatrick
+
+# Build settings
+remote_theme: fienestar/jekyll-terminal-theme
+plugins:
+  - jekyll-feed
+
+css: assets/css
+js: assets/js
+images: assets/images
+

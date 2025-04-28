@@ -1,0 +1,25 @@
+---
+---
+
+@import "base";
+@import "custom/custom";
+@import "external";
+@import "post-list";
+@import "colors";
+@import "post";
+
+html {
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+body {
+    color: #cccccc;
+}
+
+.layout a:not(.post-title) {
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
